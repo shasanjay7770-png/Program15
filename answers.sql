@@ -1,1 +1,13 @@
-
+Assume 40 marks is the pass mark.
+SET SERVEROUTPUT ON;
+DECLARE
+marks NUMBER := 65;
+BEGIN
+IF marks >= 40 THEN
+DBMS_OUTPUT.PUT_LINE('Student has Passed');
+ELSE
+DBMS_OUTPUT.PUT_LINE('Student has Failed');
+END IF;
+END;
+/
+16. Write a PL/SQL program using FOR LOOP to d
